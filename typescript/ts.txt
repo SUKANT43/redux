@@ -1,0 +1,11 @@
+what is typescript?
+=>ts is a superset of js 
+=>it helps to write a code in much precise manner it helps to reduce run time error
+
+what ts is not?
+=>it is not a new programming language
+=>it's only job is static checking
+=>ts is a development tool
+ts -> js
+
+tsc into.ts
