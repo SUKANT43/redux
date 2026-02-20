@@ -14,17 +14,55 @@
 // }
 
 
+// type User={
+//     name:string;
+//     email:string;
+//     isActive:boolean;
+// }
+
+
+// function createUser(user:User):User{
+//     return {name:user.name,email:user.email,isActive:user.isActive}
+// }
+
+// createUser({name:"",email:"",isActive:true})
+
 type User={
+    readonly _id:string;
     name:string;
     email:string;
     isActive:boolean;
+    creditcardDetails?:number;
 }
 
 
-function createUser(user:User):User{
-    return {name:user.name,email:user.email,isActive:user.isActive}
+let myUser:User={
+    _id:"1234",
+    name:"h",
+    email:"h@h.com",
+    isActive:false
 }
 
-createUser({name:"",email:"",isActive:true})
+myUser.email="h@gmail.com"
+
+type cardNumber={
+    cardnumber:string;
+}
+
+type cardDate={
+    cardDate:string
+}
+
+type cardDetails=cardNumber & cardDate & {
+    cvv?:string
+};
+
+let c:cardDetails={
+    cardnumber:"23",
+    cardDate:"23",
+    cvv:"12"
+}
+
+console.log(c);
 
 export{}
