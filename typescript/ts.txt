@@ -9,3 +9,6 @@ what ts is not?
 ts -> js
 
 tsc into.ts
+
+why we not need to use any keyword?
+we using ts for type but we using any 😂
