@@ -4,10 +4,11 @@ function addTwo(num) {
     return num + 2;
 }
 addTwo(5);
-var heros = [1, 2, 3];
-heros.map(function (h) {
+const heros = [1, 2, 3];
+heros.map((h) => {
     return "hero is" + h;
 });
 function fail(msg) {
     throw new Error(msg);
 }
+//# sourceMappingURL=myfunctions.js.map
